@@ -1,0 +1,14 @@
+# Question 2 - Sentence details
+sentence = input("Enter a sentence: ")
+
+char_count = len(sentence)
+word_count = len(sentence.split())
+vowel_count = sum(1 for c in sentence.lower() if c in 'aeiou')
+space_count = sentence.count(' ')
+digit_count = sum(1 for c in sentence if c.isdigit())
+
+print(f"Number of characters: {char_count}")
+print(f"Number of words: {word_count}")
+print(f"Number of vowels: {vowel_count}")
+print(f"Number of spaces: {space_count}")
+print(f"Number of digits: {digit_count}")
